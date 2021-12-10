@@ -4,15 +4,30 @@ import datetime as dt
 import cv2 as cv
 import mediapipe as mp
 import playsound as ps
+from tkinter import *
+from PIL import Image, ImageTk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 mp_face_detection = mp.solutions.face_detection
 mp_drawing = mp.solutions.drawing_utils
-
-
-
-
-
-
 
 
 
@@ -100,10 +115,22 @@ with mp_face_detection.FaceDetection(
 
         cv.imshow('MediaPipe Face Detection', cv.flip(image, 1))
 
+        
+
+        
+
+
+
+
+
+
+
+
+      
+
 
         if cv.waitKey(10) & 0xff == ord('q'):
             break
-
 
 
 
